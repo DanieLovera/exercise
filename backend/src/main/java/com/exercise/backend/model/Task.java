@@ -14,7 +14,6 @@ public class Task {
 
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
-    @JsonIgnore
     @Column(name="task_id")
     private Long taskId;
 
@@ -24,12 +23,10 @@ public class Task {
     @Column(name="state", nullable = false)
     private TaskState state;
 
-    @JsonIgnore
     public Long getTaskId() {
         return taskId;
     }
 
-    @JsonIgnore
     public void setTaskId(Long taskId) {
         this.taskId = taskId;
     }

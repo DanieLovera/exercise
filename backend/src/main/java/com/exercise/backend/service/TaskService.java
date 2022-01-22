@@ -31,7 +31,7 @@ public class TaskService {
 
     public Collection<Task> getTasks() {
         Collection<Task> tasks = new ArrayList<>();
-        taskRepository.findAll().forEach(task -> tasks.add(task));
+        taskRepository.findAllOrderById().forEach(task -> tasks.add(task));
         return tasks;
     }
 

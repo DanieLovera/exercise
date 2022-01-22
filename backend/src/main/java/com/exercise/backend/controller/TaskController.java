@@ -10,6 +10,7 @@ import java.util.Collection;
 
 @RestController
 @RequestMapping(path = "tasks")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class TaskController {
 
     private TaskService taskService;

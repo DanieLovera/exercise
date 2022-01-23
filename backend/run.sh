@@ -24,11 +24,9 @@ install_node() {
 	log_inf "Node installation completed"
 }
 
-install_gradle() {
-	curl -sLO https\://services.gradle.org/distributions/gradle-7.3.2-bin.zip
-	sudo unzip -d /opt/ gradle-7.3.2-bin.zip	
-	sudo ln -s /opt/gradle-7.3.2/bin/gradle /usr/bin/gradle
-	log_inf "Gradle installation completed"
+install_mvn() {
+	sudo apt-get install mvn
+	log_inf "Maven installation completed"
 }
 
 install_java() {
